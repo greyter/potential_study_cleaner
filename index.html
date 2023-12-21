@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potential study cleaner</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        table{
+            width: 75%;
+        }
+        td, th {
+            padding: 5px;
+            border-bottom: 1px solid #000;
+        }
+
+        thead{
+            background-color: #DDD;
+        }
+    </style>
+</head>
+<body>
+    <div id="form" class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form id="keywordForm">
+                    <div class="form-group">
+                        <label for="keywordsTextarea">keywords and AMS</label>
+                        <textarea class="form-control" id="keywordsTextarea" rows="3">
+toiture luxembourg	100
+toitures luxembourg	55
+toiture au luxembourg	80
+toiture à luxembourg	70
+toiture luxembourgeoise	10
+luxembourg toiture	100
+lux toiture	10
+Lux Toiture	10
+luxembourg toiture ardoise	50
+luxembourg toiture en ardoise	40</textarea>
+                    </div>
+                    <select id="language">
+                        <option value="XX">Select a study language</option>
+                        <option value="EN">EN</option>
+                        <option value="FR">FR</option>
+                        <option value="DE">DE</option>
+                        <option value="NL">NL</option>
+                    </select> 
+                    and =>
+                    <button type="submit" class="btn btn-primary">Submit</button> 
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div id="result" class="col-md-8 offset-md-2" style="display: flex; justify-content: center; align-items: center">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="doublon.js"></script>
+</body>
+</html>
